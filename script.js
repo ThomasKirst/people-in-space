@@ -11,7 +11,7 @@ const allButton = document.querySelector("[data-js='all-button']");
 let peopleInSpace = [];
 
 async function getPeopleInSpace() {
-  const response = await fetch("http://api.open-notify.org/astros.json");
+  const response = await fetch("https://jubilant-fiesta-gr6qwvrqxv29qxg-3000.app.github.dev/astros");
   const data = await response.json();
 
   peopleInSpace = data.people;
