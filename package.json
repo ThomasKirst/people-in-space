@@ -7,7 +7,8 @@
     "server": "node server/index.js",
     "client": "live-server .",
     "start": "concurrently --kill-others \"npm run server\" \"npm run client\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd server && npm install"
   },
   "author": "",
   "license": "ISC",
